@@ -1,4 +1,4 @@
-CC = gcc -g
+CC = x86_64-w64-mingw32-gcc -g
 LIBS = -lkernel32
 
 uptime: uptime.o
