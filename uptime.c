@@ -5,7 +5,6 @@
 
 #include <stdio.h>
 #include <windows.h>
-//#include <Windows32/CommonFunctions.h>
 
 int main()
 {
@@ -18,7 +17,7 @@ int main()
 	w_minutes = 0;
 	w_seconds = 0;
 //Get the number of milliseconds since Windows was started
-	uptime_ret = GetTickCount();
+	uptime_ret = GetTickCount64();
 //Calculate number of seconds
 	w_seconds = uptime_ret/1000;
 //Calculate number of minutes
